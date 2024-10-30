@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .glass {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+  </style>
+</head>
+<body class="bg-gray-900 min-h-screen">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 right-0 bg-transparent glass shadow-lg z-50 p-4 rounded-3xl m-10">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="text-white font-bold text-xl">My App</div>
+      <ul class="flex space-x-6 text-white">
+
+        <li><a href="profile.html" class="hover:text-gray-300">Profile</a></li>
+        <li><a href="mytasks.html" class="hover:text-gray-300">Tasks</a></li>
+        <li><a href="leaderboard.html" class="hover:text-gray-300">Leaderboard</a></li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Content -->
+  <div class="pt-16">
+    <h1 class="text-white text-center text-4xl">Welcome to My App</h1>
+    <p class="text-gray-400 text-center mt-4">This is a demo application with a glassmorphism effect on the navbar.</p>
+  </div>
+  
+</body>
+</html>
